@@ -4,6 +4,7 @@ nick:
   name: Nick Example
   email: nick@example.com
   password_digest: <%= User.digest('password') %>
+  admin: true
   
 sam:
   name: Sam Sample
