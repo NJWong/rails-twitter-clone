@@ -19,6 +19,9 @@
         <%= render @microposts %>
       </ol>
       <%= will_paginate @microposts %>
+    <% else %>
+      <h3>This is where all of your microposts go - there's nothing here yet!</h3>
+      <%= link_to "Go to your News Feed", root_path, class: "btn btn-lg btn-primary btn-block" %>
     <% end %>
   </div>
 </div>
