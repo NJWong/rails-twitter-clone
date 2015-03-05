@@ -1,8 +1,10 @@
 <% provide(:title, "About") %>
 <h1>About</h1>
 
-<div class="static_copy">
-  <p>
+<div class='row'>
+  <div class='col-md-3'></div>
+  <div class='col-md-6 static_copy'>
+    <p>
     Welcome to my very first web application created in
     <a href="http://rubyonrails.org/">Ruby on Rails</a>.
   </p>
@@ -28,8 +30,24 @@
   <p>
     I hope you have fun using my very simple application!
   </p>
-  
-  <h3>
+  </div>
+  <div class='col-md-3'></div>
+</div>
+
+  <h3 class="static_copy">
     ~ <a href="https://www.linkedin.com/pub/nicholas-wong/7a/740/803" target=blank><em>Nicholas Wong</em></a> ~
   </h3>
+
+<div class='row static_copy' style='margin-top: 5%'>
+  <div class='col-md-3'></div>
+  <div class='col-md-2' style='margin-top: 1%'>
+    <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
+  </div>
+  <div class='col-md-2'>
+    <h3>or</h3>
+  </div>
+  <div class='col-md-2' style='margin-top: 1%'>
+    <%= link_to "Log in", login_path, class: 'btn btn-lg btn-primary' %>
+  </div>
+  <div class='col-md-3'></div>
 </div>
