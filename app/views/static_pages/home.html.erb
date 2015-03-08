@@ -18,13 +18,30 @@
   </div>
 <% else %>
   <div class="center jumbotron">
-    <h1>Welcome to Nick's App!</h1>
-    <h2>
-      Check out my first web application created using Ruby on Rails
-    </h2>
+    <container>
+      <div style="margin-bottom: 5%">
+        <h1>Welcome to Nick's App!</h1>
+        <h3><em>A very basic Twitter clone</em></h3>
+      </div>
+    </container>
     
-    <%= link_to "Sign up now!", signup_path, id: "signup_btn", class: "btn btn-lg btn-primary" %>
+    <container>
+      <div class='row' style="margin-bottom: 5%">
+        <div class='col-md-4'>
+          <p><em>Follow</em> your friends to see what they are up to</p>
+        </div>
+        <div class='col-md-4'>
+          <p><em>Share</em> what is on your mind with micro blog posts (microposts)</p>
+        </div>
+        <div class='col-md-4'>
+          <p><em>Upload</em> pictures to share your experiences</p>
+        </div>
+      </div>
+    </container>
     
-    <%= link_to "Learn more", about_path, id: "learnmore_btn", class: 'btn btn-lg btn-success' %>
+    <container>
+      <%= link_to "Sign up now!", signup_path, id: "signup_btn", class: "btn btn-lg btn-primary" %>
+      <%= link_to "Learn more", about_path, id: "learnmore_btn", class: 'btn btn-lg btn-success' %>
+    </container>
   </div>
 <% end %>
